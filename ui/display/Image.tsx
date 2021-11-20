@@ -25,6 +25,7 @@ function Image(props: Props): JSX.Element {
   return (
     <Box
       borderRadius={props.borderRadius}
+      flexShrink={props.flexShrink}
       height={`${props.height}px`}
       overflow="hidden"
       width={`${props.width}px`}
