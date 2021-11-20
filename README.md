@@ -1,3 +1,3 @@
-# Community
+# Comuncy
 
 Goncy community featured profiles

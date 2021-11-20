@@ -25,9 +25,9 @@ const HomePage: NextPage<Props> = ({users}) => {
   return (
     <>
       <Head>
-        <title>Goncy community</title>
+        <title>Comuncy</title>
         <meta content="Goncy community featured profiles" name="description" />
-        <meta content="Goncy community" name="title" />
+        <meta content="Comuncy" name="title" />
       </Head>
       <Container maxWidth="container.md" paddingY={4}>
         <Stack

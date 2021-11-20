@@ -50,9 +50,9 @@ const EntryPage: NextPage<Props> = ({entry}) => {
   return (
     <>
       <Head>
-        <title>Goncy community | {entry.user.name}</title>
+        <title>Comuncy | {entry.user.name}</title>
         <meta content={entry.user.bio} name="description" />
-        <meta content={`Goncy community | ${entry.user.name}`} name="title" />
+        <meta content={`Comuncy | ${entry.user.name}`} name="title" />
       </Head>
       <Container maxWidth="container.md" paddingY={4}>
         <Stack
