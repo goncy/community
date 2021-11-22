@@ -21,14 +21,20 @@ const api = {
     },
   },
   entry: {
-    fetch: async (id: Entry["user"]["id"]): Promise<Entry> => {
-      const source = fs.readFileSync(path.join(root, "data", "entries", `${id}.md`), "utf8");
-      const {data, content} = matter(source);
+    fetch: async (id: Entry["user"]["id"]): Promise<Entry | undefined> => {
+      try {
+        const source = fs.readFileSync(path.join(root, "data", "entries", `${id}.md`), "utf8");
+        const {data, content} = matter(source);
 
-      return {
-        user: data as User,
-        content: content as Entry["content"],
-      };
+        return {
+          user: data as User,
+          content: content as Entry["content"],
+        };
+      } catch (error) {
+        console.warn(error);
+
+        return undefined;
+      }
     },
   },
 };

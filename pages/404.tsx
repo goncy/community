@@ -1,0 +1,37 @@
+import React from "react";
+import Head from "next/head";
+import {Container, Text} from "@chakra-ui/react";
+
+import Link from "../ui/controls/Link";
+
+const NotFoundPage: React.VFC = () => {
+  return (
+    <>
+      <Head>
+        <title>Comuncy | not found</title>
+        <meta content="Goncy community featured profiles" name="description" />
+        <meta content="Comuncy | not found" name="title" />
+      </Head>
+      <Container maxWidth="container.md" paddingY={4}>
+        <Text
+          backgroundColor="white"
+          borderRadius="lg"
+          filter="drop-shadow(0px 0px 12px black)"
+          padding={6}
+        >
+          This profile was not found, you can go to the{" "}
+          <Link color="primary.500" href="/">
+            index page
+          </Link>{" "}
+          to see a list of all the profiles or you can propose this profile on the{" "}
+          <Link isExternal color="primary.500" href="https://discord.gonzalopozzo.com">
+            discord server
+          </Link>
+          .
+        </Text>
+      </Container>
+    </>
+  );
+};
+
+export default NotFoundPage;

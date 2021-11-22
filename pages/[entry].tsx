@@ -26,6 +26,12 @@ interface Params extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps<Props, Params> = async ({params}) => {
   const entry = await api.entry.fetch(params?.entry as string);
 
+  if (!entry) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       entry,
