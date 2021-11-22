@@ -80,7 +80,7 @@ const EntryPage: NextPage<Props> = ({entry}) => {
               </Stack>
               <Stack direction="row" justifyContent={{base: "center", md: "flex-start"}}>
                 {entry.user.github && (
-                  <Link href={`https://github.com/${entry.user.github}`}>
+                  <Link isExternal href={`https://github.com/${entry.user.github}`}>
                     <IconButton
                       isRound
                       aria-label="icon"
@@ -94,7 +94,7 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   </Link>
                 )}
                 {entry.user.linkedin && (
-                  <Link href={`https://linkedin.com/in/${entry.user.linkedin}`}>
+                  <Link isExternal href={`https://linkedin.com/in/${entry.user.linkedin}`}>
                     <IconButton
                       isRound
                       aria-label="icon"
@@ -114,7 +114,7 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   </Link>
                 )}
                 {entry.user.twitter && (
-                  <Link href={`https://twitter.com/${entry.user.twitter}`}>
+                  <Link isExternal href={`https://twitter.com/${entry.user.twitter}`}>
                     <IconButton
                       isRound
                       aria-label="icon"
@@ -128,7 +128,7 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   </Link>
                 )}
                 {entry.user.website && (
-                  <Link href={entry.user.website}>
+                  <Link isExternal href={entry.user.website}>
                     <IconButton
                       isRound
                       aria-label="icon"
@@ -206,6 +206,9 @@ const EntryPage: NextPage<Props> = ({entry}) => {
             )}
             <Box>
               <Markdown>{entry.content}</Markdown>
+            </Box>
+            <Box borderTopColor="primary.500" borderTopWidth={1} paddingTop={5}>
+              <Link href="/">Back to index</Link>
             </Box>
           </Stack>
         </Stack>
