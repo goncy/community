@@ -62,10 +62,10 @@ const EntryPage: NextPage<Props> = ({entry}) => {
       </Head>
       <Container maxWidth="container.md" paddingY={4}>
         <Stack
-          backgroundColor="white"
           borderBottomRadius="xl"
           borderTopRadius="lg"
           filter="drop-shadow(0px 0px 12px black)"
+          layerStyle="card"
           spacing={-6}
         >
           <Stack
@@ -78,9 +78,18 @@ const EntryPage: NextPage<Props> = ({entry}) => {
             zIndex={1}
           >
             <Stack justifyContent="space-between" spacing={6}>
-              <Stack textAlign={{base: "center", md: "left"}}>
-                <Heading fontSize="3xl">{entry.user.name}</Heading>
-                <Text color="primary.600" fontSize={{base: "lg", md: "md"}}>
+              <Stack spacing={4} textAlign={{base: "center", md: "left"}}>
+                <Stack spacing={1}>
+                  <Heading fontSize="3xl">{entry.user.name}</Heading>
+                  <Text fontSize={{base: "lg", md: "md"}} lineHeight="normal" textStyle="soft">
+                    {entry.user.position} {entry.user.company && ` · ${entry.user.company}`}
+                  </Text>
+                </Stack>
+                <Text
+                  _dark={{color: "primary.100"}}
+                  color="primary.600"
+                  fontSize={{base: "lg", md: "md"}}
+                >
                   {entry.user.bio}
                 </Text>
               </Stack>
@@ -89,8 +98,10 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   <Link isExternal href={`https://github.com/${entry.user.github}`}>
                     <IconButton
                       isRound
+                      _hover={{backgroundColor: "primary.400"}}
                       aria-label="icon"
-                      colorScheme="primary"
+                      backgroundColor="primary.500"
+                      colorScheme="default"
                       height={12}
                       icon={
                         <Image alt="icon" height={36} layout="fixed" src={githubIcon} width={36} />
@@ -103,8 +114,10 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   <Link isExternal href={`https://linkedin.com/in/${entry.user.linkedin}`}>
                     <IconButton
                       isRound
+                      _hover={{backgroundColor: "primary.400"}}
                       aria-label="icon"
-                      colorScheme="primary"
+                      backgroundColor="primary.500"
+                      colorScheme="default"
                       height={12}
                       icon={
                         <Image
@@ -123,8 +136,10 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   <Link isExternal href={`https://twitter.com/${entry.user.twitter}`}>
                     <IconButton
                       isRound
+                      _hover={{backgroundColor: "primary.400"}}
                       aria-label="icon"
-                      colorScheme="primary"
+                      backgroundColor="primary.500"
+                      colorScheme="default"
                       height={12}
                       icon={
                         <Image alt="icon" height={31} layout="fixed" src={twitterIcon} width={31} />
@@ -137,8 +152,10 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                   <Link isExternal href={entry.user.website}>
                     <IconButton
                       isRound
+                      _hover={{backgroundColor: "primary.400"}}
                       aria-label="icon"
-                      colorScheme="primary"
+                      backgroundColor="primary.500"
+                      colorScheme="default"
                       height={12}
                       icon={
                         <Image alt="icon" height={31} layout="fixed" src={globeIcon} width={31} />
@@ -149,7 +166,13 @@ const EntryPage: NextPage<Props> = ({entry}) => {
                 )}
               </Stack>
             </Stack>
-            <Box height={256} position="relative" width={256}>
+            <Box
+              borderRadius="lg"
+              boxShadow="0 0 8px rgba(0, 0, 0, 20%)"
+              height={256}
+              position="relative"
+              width={256}
+            >
               <Box
                 borderColor="white"
                 borderRadius={9999}
@@ -214,7 +237,7 @@ const EntryPage: NextPage<Props> = ({entry}) => {
               <Markdown>{entry.content}</Markdown>
             </Box>
             <Box borderTopColor="primary.500" borderTopWidth={1} paddingTop={5}>
-              <Link href="/">Back to index</Link>
+              <Link href="/">Volver al inicio</Link>
             </Box>
           </Stack>
         </Stack>

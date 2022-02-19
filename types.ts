@@ -10,6 +10,9 @@ export interface User {
   website?: string;
   testimonial?: string;
   country?: string;
+  company?: string;
+  position?: string;
+  technologies?: string[];
 }
 
 export interface Entry {

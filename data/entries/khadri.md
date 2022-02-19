@@ -8,6 +8,9 @@ twitter: justkahdri
 website: https://justkahdri.netlify.app/
 bio: I'm a self-taught Developer from Buenos Aires, Argentina. During my personal projects I worked with Frontend, Data Analysis and Databases. My main objective is to become a professional in tech. Maybe you can help me achieve it!
 testimonial: Joaquín has one of the most promising profiles in the community, althought being young he has shown great skills and creativity in all the challenges he presented for the streams. I'm totally sure that with some companion he can be a very valuable asset in 1 year of work.
+company: Major Key
+position: React Developer
+technologies: [React, Next.js]
 country: ar
 avatar: /avatars/khadri.jpg
 ---
