@@ -42,8 +42,11 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
         {/* End meta tags */}
       </Head>
       <Stack
+        _dark={{
+          borderColor: "whiteAlpha.300",
+        }}
         as={Container}
-        borderRadius="sm"
+        borderColor="blackAlpha.700"
         borderWidth={1}
         boxShadow="sm"
         height="100%"

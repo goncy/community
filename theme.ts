@@ -4,7 +4,7 @@ import backgroundImage from "./public/bg.jpg";
 
 export default extendTheme({
   config: {
-    initialColorMode: "dark",
+    initialColorMode: "light",
     useSystemColorMode: false,
   },
   styles: {
