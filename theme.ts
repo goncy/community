@@ -3,6 +3,10 @@ import {extendTheme, theme} from "@chakra-ui/react";
 import backgroundImage from "./public/bg.jpg";
 
 export default extendTheme({
+  config: {
+    initialColorMode: "dark",
+    useSystemColorMode: false,
+  },
   styles: {
     global: {
       "html, body, #__next": {
