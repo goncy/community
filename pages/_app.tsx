@@ -31,6 +31,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
         <title>Communcy</title>
         <meta content="initial-scale=1.0, width=device-width" name="viewport" />
         {/* Start meta tags */}
+        <meta content="Communcy" name="title" />
         <meta content="goncy" name="author" />
         <meta content="Gonzalo Pozzo" name="copyright" />
         <meta
