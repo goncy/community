@@ -8,9 +8,9 @@ const NotFoundPage: React.VFC = () => {
   return (
     <>
       <Head>
-        <title>Comuncy | not found</title>
+        <title>Communcy | not found</title>
         <meta content="Goncy community featured profiles" name="description" />
-        <meta content="Comuncy | not found" name="title" />
+        <meta content="Communcy | not found" name="title" />
       </Head>
       <Container maxWidth="container.md" paddingY={6}>
         <Text

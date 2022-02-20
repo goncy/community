@@ -56,9 +56,9 @@ const EntryPage: NextPage<Props> = ({entry}) => {
   return (
     <>
       <Head>
-        <title>Comuncy | {entry.user.name}</title>
+        <title>Communcy | {entry.user.name}</title>
         <meta content={entry.user.bio} name="description" />
-        <meta content={`Comuncy | ${entry.user.name}`} name="title" />
+        <meta content={`Communcy | ${entry.user.name}`} name="title" />
       </Head>
       <Stack flex={1} spacing={-6}>
         <Stack

@@ -35,9 +35,9 @@ const HomePage: NextPage<Props> = ({users}) => {
   return (
     <>
       <Head>
-        <title>Comuncy</title>
+        <title>Communcy</title>
         <meta content="Goncy community featured profiles" name="description" />
-        <meta content="Comuncy" name="title" />
+        <meta content="Communcy" name="title" />
       </Head>
       <Stack borderBottomWidth={1} borderRadius="sm" divider={<StackDivider />} spacing={0}>
         {users.map((user) => (
