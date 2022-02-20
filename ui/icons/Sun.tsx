@@ -4,7 +4,13 @@ import {Box, BoxProps} from "@chakra-ui/react";
 function SunIcon(props: BoxProps): JSX.Element {
   return (
     <Box {...props}>
-      <svg className="chakra-icon css-onkibi" focusable="false" viewBox="0 0 24 24">
+      <svg
+        className="chakra-icon css-onkibi"
+        focusable="false"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
         <g
           fill="none"
           stroke="currentColor"
