@@ -12,7 +12,7 @@ const NotFoundPage: React.VFC = () => {
         <meta content="Goncy community featured profiles" name="description" />
         <meta content="Comuncy | not found" name="title" />
       </Head>
-      <Container maxWidth="container.md" paddingY={4}>
+      <Container maxWidth="container.md" paddingY={6}>
         <Text
           backgroundColor="white"
           borderRadius="lg"

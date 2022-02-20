@@ -4,7 +4,7 @@ import type {Entry} from "../types";
 import {ParsedUrlQuery} from "querystring";
 
 import Head from "next/head";
-import {Stack, Heading, Container, Box, Text, IconButton} from "@chakra-ui/react";
+import {Stack, Heading, Box, Text, IconButton} from "@chakra-ui/react";
 
 import api from "../api";
 import Markdown from "../ui/display/Markdown";
@@ -60,158 +60,145 @@ const EntryPage: NextPage<Props> = ({entry}) => {
         <meta content={entry.user.bio} name="description" />
         <meta content={`Comuncy | ${entry.user.name}`} name="title" />
       </Head>
-      <Container maxWidth="container.md" paddingY={4}>
+      <Stack flex={1} spacing={-6}>
         <Stack
-          borderBottomRadius="xl"
-          borderTopRadius="lg"
-          filter="drop-shadow(0px 0px 12px black)"
-          layerStyle="card"
-          spacing={-6}
+          alignItems={{base: "center", md: "unset"}}
+          direction={{base: "column-reverse", md: "row"}}
+          justifyContent="space-between"
+          padding={6}
+          paddingBottom={0}
+          spacing={6}
+          zIndex={1}
         >
-          <Stack
-            alignItems={{base: "center", md: "unset"}}
-            direction={{base: "column-reverse", md: "row"}}
-            justifyContent="space-between"
-            padding={6}
-            paddingBottom={0}
-            spacing={6}
-            zIndex={1}
-          >
-            <Stack justifyContent="space-between" spacing={6}>
-              <Stack spacing={4} textAlign={{base: "center", md: "left"}}>
-                <Stack spacing={1}>
-                  <Heading fontSize="3xl">{entry.user.name}</Heading>
-                  <Text fontSize={{base: "lg", md: "md"}} lineHeight="normal" textStyle="soft">
-                    {entry.user.position} {entry.user.company && ` · ${entry.user.company}`}
-                  </Text>
-                </Stack>
-                <Text
-                  _dark={{color: "primary.100"}}
-                  color="primary.600"
-                  fontSize={{base: "lg", md: "md"}}
-                >
-                  {entry.user.bio}
+          <Stack justifyContent="space-between" spacing={6}>
+            <Stack spacing={3} textAlign={{base: "center", md: "left"}}>
+              <Stack spacing={1}>
+                <Heading fontSize="3xl">{entry.user.name}</Heading>
+                <Text fontSize={{base: "lg", md: "md"}} lineHeight="normal" textStyle="soft">
+                  {entry.user.position} {entry.user.company && ` · ${entry.user.company}`}
                 </Text>
               </Stack>
-              <Stack direction="row" justifyContent={{base: "center", md: "flex-start"}}>
-                {entry.user.github && (
-                  <Link isExternal href={`https://github.com/${entry.user.github}`}>
-                    <IconButton
-                      isRound
-                      _hover={{backgroundColor: "primary.400"}}
-                      aria-label="icon"
-                      backgroundColor="primary.500"
-                      colorScheme="default"
-                      height={12}
-                      icon={
-                        <Image alt="icon" height={36} layout="fixed" src={githubIcon} width={36} />
-                      }
-                      width={12}
-                    />
-                  </Link>
-                )}
-                {entry.user.linkedin && (
-                  <Link isExternal href={`https://linkedin.com/in/${entry.user.linkedin}`}>
-                    <IconButton
-                      isRound
-                      _hover={{backgroundColor: "primary.400"}}
-                      aria-label="icon"
-                      backgroundColor="primary.500"
-                      colorScheme="default"
-                      height={12}
-                      icon={
-                        <Image
-                          alt="icon"
-                          height={30}
-                          layout="fixed"
-                          src={linkedinIcon}
-                          width={30}
-                        />
-                      }
-                      width={12}
-                    />
-                  </Link>
-                )}
-                {entry.user.twitter && (
-                  <Link isExternal href={`https://twitter.com/${entry.user.twitter}`}>
-                    <IconButton
-                      isRound
-                      _hover={{backgroundColor: "primary.400"}}
-                      aria-label="icon"
-                      backgroundColor="primary.500"
-                      colorScheme="default"
-                      height={12}
-                      icon={
-                        <Image alt="icon" height={31} layout="fixed" src={twitterIcon} width={31} />
-                      }
-                      width={12}
-                    />
-                  </Link>
-                )}
-                {entry.user.website && (
-                  <Link isExternal href={entry.user.website}>
-                    <IconButton
-                      isRound
-                      _hover={{backgroundColor: "primary.400"}}
-                      aria-label="icon"
-                      backgroundColor="primary.500"
-                      colorScheme="default"
-                      height={12}
-                      icon={
-                        <Image alt="icon" height={31} layout="fixed" src={globeIcon} width={31} />
-                      }
-                      width={12}
-                    />
-                  </Link>
-                )}
-              </Stack>
+              <Text
+                _dark={{color: "primary.100"}}
+                color="primary.600"
+                fontSize={{base: "lg", md: "md"}}
+              >
+                {entry.user.bio}
+              </Text>
             </Stack>
+            <Stack direction="row" justifyContent={{base: "center", md: "flex-start"}}>
+              {entry.user.github && (
+                <Link isExternal href={`https://github.com/${entry.user.github}`}>
+                  <IconButton
+                    isRound
+                    _hover={{backgroundColor: "primary.400"}}
+                    aria-label="icon"
+                    backgroundColor="primary.500"
+                    colorScheme="default"
+                    height={12}
+                    icon={
+                      <Image alt="icon" height={36} layout="fixed" src={githubIcon} width={36} />
+                    }
+                    width={12}
+                  />
+                </Link>
+              )}
+              {entry.user.linkedin && (
+                <Link isExternal href={`https://linkedin.com/in/${entry.user.linkedin}`}>
+                  <IconButton
+                    isRound
+                    _hover={{backgroundColor: "primary.400"}}
+                    aria-label="icon"
+                    backgroundColor="primary.500"
+                    colorScheme="default"
+                    height={12}
+                    icon={
+                      <Image alt="icon" height={30} layout="fixed" src={linkedinIcon} width={30} />
+                    }
+                    width={12}
+                  />
+                </Link>
+              )}
+              {entry.user.twitter && (
+                <Link isExternal href={`https://twitter.com/${entry.user.twitter}`}>
+                  <IconButton
+                    isRound
+                    _hover={{backgroundColor: "primary.400"}}
+                    aria-label="icon"
+                    backgroundColor="primary.500"
+                    colorScheme="default"
+                    height={12}
+                    icon={
+                      <Image alt="icon" height={31} layout="fixed" src={twitterIcon} width={31} />
+                    }
+                    width={12}
+                  />
+                </Link>
+              )}
+              {entry.user.website && (
+                <Link isExternal href={entry.user.website}>
+                  <IconButton
+                    isRound
+                    _hover={{backgroundColor: "primary.400"}}
+                    aria-label="icon"
+                    backgroundColor="primary.500"
+                    colorScheme="default"
+                    height={12}
+                    icon={
+                      <Image alt="icon" height={31} layout="fixed" src={globeIcon} width={31} />
+                    }
+                    width={12}
+                  />
+                </Link>
+              )}
+            </Stack>
+          </Stack>
+          <Box
+            borderRadius="lg"
+            boxShadow="0 0 8px rgba(0, 0, 0, 20%)"
+            height={256}
+            position="relative"
+            width={256}
+          >
             <Box
-              borderRadius="lg"
-              boxShadow="0 0 8px rgba(0, 0, 0, 20%)"
-              height={256}
-              position="relative"
-              width={256}
+              borderColor="white"
+              borderRadius={9999}
+              borderWidth={2}
+              position="absolute"
+              right={2}
+              top={2}
+              zIndex={1}
             >
-              <Box
+              <Image
+                alt={entry.user.country}
                 borderColor="white"
                 borderRadius={9999}
-                borderWidth={2}
-                position="absolute"
-                right={2}
-                top={2}
-                zIndex={1}
-              >
-                <Image
-                  alt={entry.user.country}
-                  borderColor="white"
-                  borderRadius={9999}
-                  height={36}
-                  layout="fixed"
-                  src={`/flags/${entry.user.country}.svg`}
-                  width={36}
-                />
-              </Box>
-              <Image
-                alt={entry.user.name}
-                borderRadius="lg"
-                height={256}
+                height={36}
                 layout="fixed"
-                objectFit="cover"
-                src={entry.user.avatar}
-                width={256}
+                src={`/flags/${entry.user.country}.svg`}
+                width={36}
               />
             </Box>
-          </Stack>
-          <Stack
-            backgroundColor="primary.900"
-            borderBottomRadius="lg"
-            color="primary.100"
-            flex={1}
-            padding={6}
-            paddingTop={12}
-            spacing={6}
-          >
+            <Image
+              alt={entry.user.name}
+              borderRadius="lg"
+              height={256}
+              layout="fixed"
+              objectFit="cover"
+              src={entry.user.avatar}
+              width={256}
+            />
+          </Box>
+        </Stack>
+        <Stack
+          backgroundColor="primary.900"
+          color="primary.100"
+          flex={1}
+          padding={6}
+          paddingTop={12}
+          spacing={6}
+        >
+          <Stack marginBottom={6} spacing={6}>
             {entry.user.testimonial && (
               <Box
                 backgroundColor="primary.500"
@@ -236,12 +223,17 @@ const EntryPage: NextPage<Props> = ({entry}) => {
             <Box>
               <Markdown>{entry.content}</Markdown>
             </Box>
-            <Box borderTopColor="primary.500" borderTopWidth={1} paddingTop={5}>
-              <Link href="/">Volver al inicio</Link>
-            </Box>
           </Stack>
+          <Box
+            borderTopColor="primary.500"
+            borderTopWidth={1}
+            paddingTop={6}
+            style={{marginTop: "auto"}}
+          >
+            <Link href="/">Volver al inicio</Link>
+          </Box>
         </Stack>
-      </Container>
+      </Stack>
     </>
   );
 };
