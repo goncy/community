@@ -6,13 +6,14 @@ import {
   Text,
   Container,
   Stack,
-  Link,
+  Link as ExternalLink,
   StackDivider,
   useColorMode,
   Box,
   Flex,
 } from "@chakra-ui/react";
 import {AppProps} from "next/app";
+import Link from "next/link";
 
 import theme from "../theme";
 import Image from "../ui/display/Image";
@@ -67,11 +68,18 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
               fontSize={{base: 20, md: 24}}
               role="button"
               spacing={2}
-              onClick={toggleColorMode}
             >
-              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              <Heading>Communcy</Heading>
-              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              <span onClick={toggleColorMode}>
+                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              </span>
+              <Link href="/">
+                <a>
+                  <Heading>Communcy</Heading>
+                </a>
+              </Link>
+              <span onClick={toggleColorMode}>
+                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              </span>
             </Stack>
             <Text textStyle="soft">Portal de descubrimiento sobre gente de la comunidad</Text>
           </Stack>
@@ -116,7 +124,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                   justifyContent={{base: "center", md: "flex-start"}}
                   spacing={3}
                 >
-                  <Link
+                  <ExternalLink
                     isExternal
                     alignItems="center"
                     backgroundColor="primary.500"
@@ -132,8 +140,8 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                     width={8}
                   >
                     <TwitterIcon />
-                  </Link>
-                  <Link
+                  </ExternalLink>
+                  <ExternalLink
                     isExternal
                     alignItems="center"
                     backgroundColor="primary.500"
@@ -149,8 +157,8 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                     width={8}
                   >
                     <TwitchIcon />
-                  </Link>
-                  <Link
+                  </ExternalLink>
+                  <ExternalLink
                     isExternal
                     alignItems="center"
                     backgroundColor="primary.500"
@@ -166,16 +174,16 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                     width={8}
                   >
                     <YoutubeIcon />
-                  </Link>
+                  </ExternalLink>
                 </Stack>
               </Stack>
             </Stack>
           </Stack>
           <Text padding={6} textAlign="center" textStyle="soft">
             ¿Querés que tu perfil aparezca acá? Hacé tu pull request en{" "}
-            <Link isExternal href="https://github.com/goncy/community" textStyle="link">
+            <ExternalLink isExternal href="https://github.com/goncy/community" textStyle="link">
               el repositorio de <b>Communcy</b>
-            </Link>
+            </ExternalLink>
             .
           </Text>
         </Stack>
