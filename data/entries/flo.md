@@ -25,7 +25,7 @@ avatar: /avatars/flo.jpg
 
 ### Im currently working in:
 [Flo Money](https://flomoney.vercel.app/):
-* una app de gestion de finanzas personales hecha con React,Express y mongoDB.
+* A Money Managament App. (Made with React, React-Router, Chakra-UI, Express/Node.js, mongoDB) Flo Money makes managing personal ﬁnances more easy; The user can record personal ﬁnancial transactions, view reports and project ﬁnances
 
 ### You can contact me at:
 * [LinkedIn](https://www.linkedin.com/in/juli%C3%A1n-mat%C3%ADas-fl%C3%B3-931226222/)
