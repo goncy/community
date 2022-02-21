@@ -13,9 +13,8 @@ const components = {
   ul: UnorderedList,
   li: (props: any) => <ListItem listStyleType="none" {...props} />,
   a: ({children, href}: any) => (
-    <Link isExternal href={href}>
-      {" "}
-      {children}{" "}
+    <Link isExternal href={href} marginX={1}>
+      {children}
     </Link>
   ),
 };

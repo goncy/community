@@ -10,7 +10,7 @@ bio: Web developer, in continuous training! Self-taught, I learn from the web an
 position: En búsqueda laboral
 technologies: [React, NextJS, NodeJS, MongoDB, MySql]
 country: ar
-avatar: /avatars/fom78.png
+avatar: /avatars/fom78.jpg
 ---
 
 # Desarrollador web en crecimiento 👋
@@ -28,11 +28,11 @@ avatar: /avatars/fom78.png
 
 ## Tambien realizando para mi hija
 
-- Siguiendo pasos del youtuber goncy 
+- Siguiendo pasos del youtuber goncy
 - Aprendiendo TypeScript
 - Poniendome serio en los test tanto unitarios como de integracion
 - ⚡ [eCommerce Aromas del Corazon](https://aromasdelcorazon.vercel.app/)
-         
+
 ---
 
 
