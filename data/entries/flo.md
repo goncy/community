@@ -3,7 +3,7 @@ id: flo
 name: Julián Fló
 github: Flo-314
 email: julianflo1916@gmail.com
-linkedin: Julián-Matías-Fló314
+linkedin: julianflo314
 twitter: aaFloaa
 bio: I'm a self-taught FullStack developer based in Buenos Aires.I am passionate about learning new tools and mastering them. At the moment I focus on making full stack applications that can generate real value for society.
 testimonial: ?
@@ -24,7 +24,8 @@ avatar: /avatars/flo.jpg
 * MongoDB
 
 ### Im currently working in:
-[Flo Money](https://flomoney.vercel.app/) , una app de gestion de finanzas personales hecha con React,Express y mongoDB.
+[Flo Money](https://flomoney.vercel.app/):
+* una app de gestion de finanzas personales hecha con React,Express y mongoDB.
 
 ### You can contact me at:
 * [LinkedIn](https://www.linkedin.com/in/juli%C3%A1n-mat%C3%ADas-fl%C3%B3-931226222/)
