@@ -4,7 +4,7 @@ import type {Entry} from "../types";
 import {ParsedUrlQuery} from "querystring";
 
 import Head from "next/head";
-import {Stack, Heading, Box, Text, IconButton} from "@chakra-ui/react";
+import {Stack, Heading, Box, Text, IconButton, Wrap, WrapItem, Badge} from "@chakra-ui/react";
 
 import api from "../api";
 import Markdown from "../ui/display/Markdown";
@@ -74,6 +74,16 @@ const EntryPage: NextPage<Props> = ({entry}) => {
             <Stack spacing={3} textAlign={{base: "center", md: "left"}}>
               <Stack spacing={1}>
                 <Heading fontSize="3xl">{entry.user.name}</Heading>
+                <Wrap data-testid="tags">
+                  {Boolean(entry.user.technologies?.length) &&
+                    entry.user.technologies?.map((tag) => (
+                      <WrapItem key={tag}>
+                        <Badge colorScheme="secondary" fontSize={{base: 12, md: 11}}>
+                          {tag}
+                        </Badge>
+                      </WrapItem>
+                    ))}
+                </Wrap>
                 <Text fontSize={{base: "lg", md: "md"}} lineHeight="normal" textStyle="soft">
                   {entry.user.position} {entry.user.company && ` · ${entry.user.company}`}
                 </Text>
