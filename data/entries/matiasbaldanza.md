@@ -5,7 +5,7 @@ github: matiasbaldanza
 email: matiasbaldanza@gmail.com
 linkedin: matiasbaldanza
 twitter: matiasbaldanza
-portfolio: https://matiasbaldanza.dev
+website: https://matiasbaldanza.dev
 bio: I'm a former IT sysadmin (Linux, Windows Server, Infosec) transitioning into Front-End (React) and currently based in Necochea, Buenos Aires, Argentina. I'm a practitioner of agile methodologies and a firm believer in mastering your dev tools. I'm currently freelancing and looking for my first trainee/junior role.
 position: Looking for my first trainee/junior role. Currently freelancing.
 technologies: [React, Node/Express.js]
@@ -34,5 +34,5 @@ Current work situation:
 
 ### Contact information:
 - LinkedIn: [linkedin.com/in/matiasbaldanza](https://www.linkedin.com/in/matiasbaldanza/)
-- GitHub:   [github.com/matiasbaldanza](https://github.com/matiasbaldanza)
-- Portfolio:    [matiasbaldanza.dev](https://matiasbaldanza.dev/?ref=communcy) <-- *(Coming in March 2022* 😬 *)*
+- GitHub: [github.com/matiasbaldanza](https://github.com/matiasbaldanza)
+- Portfolio: [matiasbaldanza.dev](https://matiasbaldanza.dev/?ref=communcy) <-- *(Coming in March 2022* 😬 *)*
