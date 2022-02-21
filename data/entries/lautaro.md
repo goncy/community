@@ -1,7 +1,7 @@
 ---
 id: lautaro
 name: Lautaro Perez Herrera
-github: lautaropPH
+github: lautaroPH
 email: lautaroph@gmail.com
 linkedin: lautaroperezh
 website: https://lautaroph.github.io/Portfolio/
