@@ -11,6 +11,7 @@ const Factory = chakra(NextImage, {
       "width",
       "height",
       "layout",
+      "minWidth",
       "blurDataURL",
       "aria-label",
       "alt",
@@ -27,6 +28,7 @@ function Image(props: Props): JSX.Element {
       borderRadius={props.borderRadius}
       flexShrink={props.flexShrink}
       height={`${props.height}px`}
+      minWidth={`${props.minWidth}px`}
       overflow="hidden"
       width={`${props.width}px`}
     >
