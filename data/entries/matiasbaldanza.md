@@ -15,7 +15,6 @@ avatar: /avatars/matiasbaldanza.jpg
 ---
 # Hi! I'm Matías Baldanza 👋
 (It's pronounced */mah-tee-ass/*, or Matt, for short.)
-<img style="float: right; border-radius: 50%;" src="../../public/avatars/matiasbaldanza.jpg">
 
 I'm a Fullstack Developer (MERN) from Necochea, Buenos Aires.
 
