@@ -13,11 +13,7 @@ const NotFoundPage: React.VFC = () => {
         <meta content="Communcy | not found" name="title" />
       </Head>
       <Container maxWidth="container.md" paddingY={6}>
-        <Text
-          backgroundColor="white"
-          borderRadius="lg"
-          filter="drop-shadow(0px 0px 12px black)"
-          padding={6}
+        <Text borderRadius="lg" layerStyle="card" padding={6} textStyle="soft"
         >
           This profile was not found, you can go to the{" "}
           <Link color="primary.500" href="/">
