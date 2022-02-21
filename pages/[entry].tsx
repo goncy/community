@@ -72,22 +72,22 @@ const EntryPage: NextPage<Props> = ({entry}) => {
         >
           <Stack justifyContent="space-between" spacing={6}>
             <Stack spacing={3} textAlign={{base: "center", md: "left"}}>
-              <Stack spacing={1}>
+              <Stack spacing={0}>
                 <Heading fontSize="3xl">{entry.user.name}</Heading>
-                <Wrap data-testid="tags">
-                  {Boolean(entry.user.technologies?.length) &&
-                    entry.user.technologies?.map((tag) => (
-                      <WrapItem key={tag}>
-                        <Badge colorScheme="secondary" fontSize={{base: 12, md: 11}}>
-                          {tag}
-                        </Badge>
-                      </WrapItem>
-                    ))}
-                </Wrap>
                 <Text fontSize={{base: "lg", md: "md"}} lineHeight="normal" textStyle="soft">
                   {entry.user.position} {entry.user.company && ` · ${entry.user.company}`}
                 </Text>
               </Stack>
+              <Wrap data-testid="tags" justify={{base: "center", md: "left"}}>
+                {Boolean(entry.user.technologies?.length) &&
+                  entry.user.technologies?.map((tag) => (
+                    <WrapItem key={tag}>
+                      <Badge colorScheme="secondary" fontSize={{base: 12, md: 11}}>
+                        {tag}
+                      </Badge>
+                    </WrapItem>
+                  ))}
+              </Wrap>
               <Text
                 _dark={{color: "primary.100"}}
                 color="primary.600"

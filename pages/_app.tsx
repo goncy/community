@@ -13,7 +13,6 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import {AppProps} from "next/app";
-import Link from "next/link";
 
 import theme from "../theme";
 import Image from "../ui/display/Image";
@@ -22,6 +21,7 @@ import TwitchIcon from "../ui/icons/Twitch";
 import YoutubeIcon from "../ui/icons/Youtube";
 import MoonIcon from "../ui/icons/Moon";
 import SunIcon from "../ui/icons/Sun";
+import Link from "../ui/controls/Link";
 
 const App: React.FC<AppProps> = ({Component, pageProps}) => {
   const {toggleColorMode, colorMode} = useColorMode();
@@ -73,9 +73,7 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </span>
               <Link href="/">
-                <a>
-                  <Heading>Communcy</Heading>
-                </a>
+                <Heading>Communcy</Heading>
               </Link>
               <span onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
