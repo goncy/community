@@ -26,6 +26,6 @@ avatar: /avatars/flo.jpg
 ### Im currently working in:
 [Flo Money](https://flomoney.vercel.app/)
 
-### Get the party started
+### You can contact me at
 * [LinkedIn](https://www.linkedin.com/in/juli%C3%A1n-mat%C3%ADas-fl%C3%B3-931226222/)
 * [Github](https://github.com/Flo-314)
