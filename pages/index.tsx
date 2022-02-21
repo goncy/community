@@ -12,6 +12,7 @@ import {
   Wrap,
   Box,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 import api from "../api";
 import Image from "../ui/display/Image";
@@ -52,15 +53,16 @@ const HomePage: NextPage<Props> = ({users}) => {
                   />
                 )}
                 <Stack spacing={0}>
-                  <LinkOverlay
-                    aria-label={user.name}
-                    fontSize={{base: "xl", md: "lg"}}
-                    fontWeight="500"
-                    href={`/${user.id}`}
-                    lineHeight="normal"
-                  >
-                    {user.name}
-                  </LinkOverlay>
+                  <Link passHref href={`/${user.id}`}>
+                    <LinkOverlay
+                      aria-label={user.name}
+                      fontSize={{base: "xl", md: "lg"}}
+                      fontWeight="500"
+                      lineHeight="normal"
+                    >
+                      {user.name}
+                    </LinkOverlay>
+                  </Link>
                   <Text fontSize={{base: "md", md: "sm"}} lineHeight="normal" textStyle="soft">
                     {user.position} {user.company && ` · ${user.company}`}
                   </Text>
