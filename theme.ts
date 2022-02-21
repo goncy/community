@@ -13,6 +13,7 @@ export default extendTheme({
         minHeight: "100vh",
       },
       body: {
+        backgroundAttachment: "fixed",
         backgroundImage: `url(${backgroundImage.src})`,
         backgroundSize: "cover",
       },
