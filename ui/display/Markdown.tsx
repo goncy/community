@@ -1,5 +1,5 @@
 import React from "react";
-import {ListItem, UnorderedList, Heading, Stack, Link} from "@chakra-ui/react";
+import {ListItem, UnorderedList, Heading, Stack} from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -12,11 +12,6 @@ const components = {
   h3: (props: any) => <Heading fontSize="2xl" {...props} />,
   ul: UnorderedList,
   li: (props: any) => <ListItem listStyleType="none" {...props} />,
-  a: ({children, href}: any) => (
-    <Link isExternal href={href}>
-      {children}
-    </Link>
-  ),
 };
 
 const Markdown: React.VFC<Props> = ({children}) => {
