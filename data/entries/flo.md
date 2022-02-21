@@ -6,7 +6,6 @@ email: julianflo1916@gmail.com
 linkedin: julianflo314
 twitter: aaFloaa
 bio: I'm a self-taught FullStack developer based in Buenos Aires.I am passionate about learning new tools and mastering them. At the moment I focus on making full stack applications that can generate real value for society.
-testimonial: ?
 position: En búsqueda laboral
 technologies: [React, Node/Express.js]
 country: ar
