@@ -5,6 +5,7 @@ github: fom78
 email: fom78a@gmail.com
 linkedin: fernandomasino
 twitter: fom78a
+website: https://www.fom78.com.ar/
 bio: Web developer, in continuous training! Self-taught, I learn from the web and currently taking a course in Web Development Fullstack, on the platform codo a codo 4.0. As a web developer I do not have any experience for companies, all my lines of code were destined to the hobby. They can be seen in my projects .As a programmer of plc I have programmed Siemens automata for companies Quilmes and some work for third parties. (Technology Simatic S7 and TIA Portal) etc.
 position: En búsqueda laboral
 technologies: [React, NextJS, NodeJS, MongoDB, MySql]
