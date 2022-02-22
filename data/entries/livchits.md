@@ -13,3 +13,8 @@ technologies: [React, TypeScript]
 country: ar
 avatar: /avatars/livchits.jpg
 ---
+
+# Hello, I'm Lucas Livchits
+## FullStack JavaScript Developer_
+
+I enjoy building things for the web and learning every day. Now, I am in love with development, but I've been a journalist for many years.
