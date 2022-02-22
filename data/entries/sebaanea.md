@@ -6,7 +6,7 @@ email: sebastiananea@gmail.com
 linkedin: sebastiananea
 twitter: sebaanea
 website: https://sebastiananeaporfolio.netlify.app/
-bio: Trained in full stack development, and a strong interest in art, science, and technological advance as a tool to make the world a better place.
+bio: Computer Sciences student at Universidad de Buenos Aires, and graduated from Henry Bootcamp as a Fullstack Web developer
 company: En busqueda laboral
 position: Fullstack (MERN)
 technologies: [React, Next.js]
