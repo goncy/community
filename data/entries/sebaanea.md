@@ -17,11 +17,18 @@ avatar: /avatars/sebaanea.jpg
 # Hi 👋, I'm Sebastian
 ### A fullstack developer from Argentina
 
-- 🔭 I’m currently working on [my Portfolio](https://sebastiananeaporfolio.netlify.app/) and personal projects
-- 🌱 I’m currently learning **NextJS, Unit Testing and React Native**
-- 👯 I’m looking to collaborate on **Open Source projects**
+I´m a fullstack developer and Computer Science student
+I started learning programming in 2019, through youtube videos and Udemy courses.
+in 2020 I was part of Digitalers, a Telecom program to train professionals in web development with Python.
+I recently graduated from Henry, an intensive bootcamp of more than 800 hours where I trained as a fullstack javascript developer.
 
-- 💬 Ask me about **React or Node**
-- 📄 Know about my experiences on my [LinkedIn](https://www.linkedin.com/in/sebastiananea/)
-- ⚡ Other interests: **I'm a musician, I love sports and reading.**
+Why me ❓
 
+I'm not just a developer. I'm a curious person, a bit nerdy 👓, wanting to grow and develop my full potential.
+I like science, philosophy and too many other topics to list. If there is something I don't know, I have to go and find out how it works.
+
+◾ Skills.
+HTML • CSS • LESS • SASS • Bootstrap • Tailwind CSS • JavaScript • Next.js • Node • Express • React • Redux • Sequelize • SQL • MongoDb • Mongoose • GIT • Responsive Design • Metodologías ágiles • Figma • Canva • Trello • Slack • Discord
+
+Porfolio: https://sebastiananeaporfolio.netlify.app/
+Mail: sebastiananea@gmail.com
