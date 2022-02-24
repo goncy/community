@@ -47,7 +47,7 @@ const HomePage: NextPage<Props> = ({users}) => {
                     height={48}
                     loading="lazy"
                     minWidth={48}
-                    objectFit="contain"
+                    objectFit="cover"
                     src={user.avatar}
                     width={48}
                   />
