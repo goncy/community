@@ -9,7 +9,7 @@ bio: I´m from Berisso, Buenos Aires, Argentina, a little city, near La Plata. I
 position: Frontend Developer · En búsqueda laboral
 technologies: [React, NodeJS, MySql, Chakra UI, Firebase, Bootstrap]
 country: ar
-avatar: /avatars/auchan.jpeg
+avatar: /avatars/auchan.jpg
 ---
 
 # Hi, I´m Agustín Surila
