@@ -4,5 +4,8 @@ Esta aplicación ayuda a la gente de la comunidad a obtener más visibilidad y t
 
 Si participas de la comunidad y querés agregar tu perfil, dejá tu PR acá agregando un archivo en [/data/entries](./data/entries/) 🙌
 
+IMPORTANTE:
+Las imagenes deben medir 400x400, ser formato JPG, y haber sido previamente optimizadas en https://squoosh.app/. La subis en /public/avatar
+
 ---
 Si te gusta mi contenido, seguime en [Twitter](https://twitter.gonzalopozzo.com), [Twitch](https://twitch.gonzalopozzo.com), convertite en [GitHub sponsor](https://github.com/sponsors/goncy), votame para [Github Star](https://stars.github.com/) o doname un [Cafecito](https://cafecito.gonzalopozzo.com) ✨
