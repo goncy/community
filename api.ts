@@ -13,16 +13,16 @@ const api = {
       const files = fs.readdirSync(path.join(root, "data", "entries"));
 
       return files.reduce<User[]>((allFiles, fileName) => {
+        const [name, extension] = fileName.split(".");
+
+        if (extension !== "md") {
+          return allFiles;
+        }
+
         const source = fs.readFileSync(path.join(root, "data", "entries", fileName), "utf8");
-        let {data} = matter(source);
-        const id = fileName.split(".").slice(0, -1).join(".");
+        const {data} = matter(source);
 
-        data = {
-          ...data,
-          id,
-        };
-
-        return [data as User, ...allFiles];
+        return [{...data, id: name} as User, ...allFiles];
       }, []);
     },
   },
