@@ -14,7 +14,13 @@ const api = {
 
       return files.reduce<User[]>((allFiles, fileName) => {
         const source = fs.readFileSync(path.join(root, "data", "entries", fileName), "utf8");
-        const {data} = matter(source);
+        let {data} = matter(source);
+        const id = fileName.split(".").slice(0, -1).join(".");
+
+        data = {
+          ...data,
+          id,
+        };
 
         return [data as User, ...allFiles];
       }, []);
