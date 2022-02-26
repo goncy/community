@@ -13,10 +13,16 @@ const api = {
       const files = fs.readdirSync(path.join(root, "data", "entries"));
 
       return files.reduce<User[]>((allFiles, fileName) => {
+        const [name, extension] = fileName.split(".");
+
+        if (extension !== "md") {
+          return allFiles;
+        }
+
         const source = fs.readFileSync(path.join(root, "data", "entries", fileName), "utf8");
         const {data} = matter(source);
 
-        return [data as User, ...allFiles];
+        return [{...data, id: name} as User, ...allFiles];
       }, []);
     },
   },
@@ -32,8 +38,6 @@ const api = {
         };
       } catch (error) {
         console.warn(error);
-
-        return undefined;
       }
     },
   },

@@ -11,7 +11,6 @@ const Factory = chakra(NextImage, {
       "width",
       "height",
       "layout",
-      "minWidth",
       "blurDataURL",
       "aria-label",
       "alt",
