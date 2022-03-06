@@ -17,7 +17,7 @@ avatar: /avatars/jereconjota.jpg
 #### Developer and Dragon Ball lover
 
 
-"Work hard, study well and eat and sleep plenty, and pley well too. That's the Turtle Hermit way to learn." 
+"Work hard, study well and eat and sleep plenty, and play well too. That's the Turtle Hermit way to learn." 
 — Master Roshi 🐲🟠
 
 ---
