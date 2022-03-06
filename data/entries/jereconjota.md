@@ -5,7 +5,7 @@ github: jereconjota
 email: jeremiasfigueroa69@gmail.com
 linkedin: jereconjota
 twitter: jereconj0ta
-bio: I am a backend developer from Comodoro Rivadavia, I am currently work remotely for Genosha. Since last month I have been really interested in NextJS.I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use. That is why I try to learn a little bit more every day.
+bio: I am a backend developer from Comodoro Rivadavia, I am currently work remotely for Genosha. Since last month I have been really interested in NextJS. I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use. That is why I try to learn a little bit more every day.
 company: Genosha
 position: Backend Developer
 technologies: [Laravel, NodeJS]
